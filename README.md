@@ -19,6 +19,17 @@ Android Studio project has a hardcoded IP address of the ESP8266 server and also
 ![alt text](https://github.com/viktorvano/STM32-IoT-Humdity-Sensor/blob/main/documents/schematic.png?raw=true)    
   
   
+#### Screenshots and Pictures  
+Web Page screenshot  
+![alt text](https://github.com/viktorvano/STM32-IoT-Humdity-Sensor/blob/main/documents/web-humidity.png?raw=true)  
+  
+IoT sensor photo  
+![alt text](https://github.com/viktorvano/STM32-IoT-Humdity-Sensor/blob/main/documents/photo.jpg?raw=true)  
+  
+AHT15 Humidity sensor read registers  
+![alt text](https://github.com/viktorvano/STM32-IoT-Humdity-Sensor/blob/main/documents/AHT15-translated.png?raw=true)    
+  
+  
 ## Software  
   
 #### WiFi Credentials  
@@ -118,13 +129,3 @@ Code snippet of main.c, where:
   }
   /* USER CODE END 3 */
 ```
-  
-#### Screenshots and Pictures  
-Web Page screenshot  
-![alt text](https://github.com/viktorvano/STM32-IoT-Humdity-Sensor/blob/main/documents/web-humidity.png?raw=true)  
-  
-IoT sensor photo  
-![alt text](https://github.com/viktorvano/STM32-IoT-Humdity-Sensor/blob/main/documents/photo.jpg?raw=true)  
-  
-AHT15 Humidity sensor read registers  
-![alt text](https://github.com/viktorvano/STM32-IoT-Humdity-Sensor/blob/main/documents/AHT15-translated.png?raw=true)  
