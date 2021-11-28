@@ -132,3 +132,23 @@ void sendData()//sends data compatible with a browser
 	HAL_UART_Transmit(&huart1, (uint8_t*)"AT+CIPCLOSE=0\r\n", strlen("AT+CIPCLOSE=0\r\n"), 100);
 }
 ```  
+## DDNS  
+  
+Use a DDNS serrvice such as No-IP to create a hostname
+![alt text](https://github.com/viktorvano/STM32-IoT-Humdity-Sensor/blob/main/documents/noip.png?raw=true)   
+  
+Add DDNS credentials to your router  
+![alt text](https://github.com/viktorvano/STM32-IoT-Humdity-Sensor/blob/main/documents/DDNS.png?raw=true)   
+  
+Reserve IP address of your IoT device (make it static, so it won't change over time)  
+![alt text](https://github.com/viktorvano/STM32-IoT-Humdity-Sensor/blob/main/documents/static-device-IP.png?raw=true)   
+  
+Setup a port forwarding rule  
+![alt text](https://github.com/viktorvano/STM32-IoT-Humdity-Sensor/blob/main/documents/port-forwarding.png?raw=true)   
+  
+Now you can make a reading from anywhere (using DDNS hostname url)  
+![alt text](https://github.com/viktorvano/STM32-IoT-Humdity-Sensor/blob/main/documents/web-humidity.png?raw=true)   
+  
+Or make a reading locally (using LAN IP address)  
+![alt text](https://github.com/viktorvano/STM32-IoT-Humdity-Sensor/blob/main/documents/web-humidity.png?raw=true)   
+  
