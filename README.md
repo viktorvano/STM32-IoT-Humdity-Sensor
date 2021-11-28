@@ -128,7 +128,7 @@ void sendData()//sends data compatible with a browser
 ```  
 ## DDNS  
   
-Use a DDNS serrvice such as No-IP to create a hostname
+Use a DDNS service such as No-IP to create a hostname
 ![alt text](https://github.com/viktorvano/STM32-IoT-Humdity-Sensor/blob/main/documents/noip.png?raw=true)   
   
 Add DDNS credentials to your router  
