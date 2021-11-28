@@ -40,7 +40,7 @@ Response is in sendData(), where:
 In "outputString" is the HTML code, where:  
 - "<title>STM32 IoT</title>" in the title visible in a web browser tab  
 - "<meta http-equiv=\"refresh\" content=\"30\">" makes the webpage auto refresh in 30 seconds  
-- "<body><h1>Humidity: %i%%</h1></body></html>" is body of the HTML code
+- "```<body><h1>Humidity: %i%%</h1></body>```" is body of the HTML code
 ```C
 void messageHandler()
 {
