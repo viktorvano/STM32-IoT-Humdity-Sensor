@@ -33,14 +33,14 @@ Function messageHandler() does two things:
 - auto reconnects to a WiFi Access Point, if disconnected  
   
 Response is in sendData(), where:  
-- "HTTP/1.1 200 OK\r\n" says that the response by server is OK  
-- "Content-Length: %i\r\n" gives info about upcomming page html code length  
-- "Content-Type: text/html\r\n\r\n" says that the upcomming code is html (other option for a plain text is "Content-Type: text/plain\r\n\r\n")  
+- ```"HTTP/1.1 200 OK\r\n"``` says that the response by server is OK  
+- ```"Content-Length: %i\r\n"``` gives info about upcomming page html code length  
+- ```"Content-Type: text/html\r\n\r\n"``` says that the upcomming code is html (other option for a plain text is ```"Content-Type: text/plain\r\n\r\n"```)  
   
 In "outputString" is the HTML code, where:  
-- "<title>STM32 IoT</title>" in the title visible in a web browser tab  
-- "<meta http-equiv=\"refresh\" content=\"30\">" makes the webpage auto refresh in 30 seconds  
-- "```<body><h1>Humidity: %i%%</h1></body>```" is body of the HTML code
+- ```<title>STM32 IoT</title>``` in the title visible in a web browser tab  
+- ```<meta http-equiv=\"refresh\" content=\"30\">``` makes the webpage auto refresh in 30 seconds  
+- ```<body><h1>Humidity: %i%%</h1></body>``` is body of the HTML code
 ```C
 void messageHandler()
 {
