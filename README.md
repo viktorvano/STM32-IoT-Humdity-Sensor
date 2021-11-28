@@ -77,6 +77,47 @@ void sendData()//sends data compatible with a browser
 	HAL_UART_Transmit(&huart1, (uint8_t*)"AT+CIPCLOSE=0\r\n", strlen("AT+CIPCLOSE=0\r\n"), 100);
 }
 ```  
+Code snippet of main.c, where:
+- humidity is measured every 30 seconds
+- messageHandler() is called when ESP8266 sends a string to STM32
+- the whole system is reset every 24 hours for safety to prevent ESP8266 firmware from getting stuck (or STM32 also)
+```C
+  /* USER CODE BEGIN 2 */
+  HAL_TIM_Base_Start_IT(&htim2);// 20 ms
+  HAL_TIM_Base_Start_IT(&htim3);// 1 s
+  HAL_Delay(100);
+  AHT15_reset();
+  HAL_Delay(100);
+  AHT15_init();
+  AHT15_read_data();
+  __HAL_UART_ENABLE_IT(&huart1, UART_IT_RXNE);
+  ESP_Server_Init();
+  /* USER CODE END 2 */
+
+  /* Infinite loop */
+  /* USER CODE BEGIN WHILE */
+  while (1)
+  {
+    /* USER CODE END WHILE */
+
+    /* USER CODE BEGIN 3 */
+	  if(measure_humidity)
+	  {
+		  AHT15_read_data();
+		  measure_humidity = 0;
+	  }
+
+	  if(messageHandlerFlag)
+	  {
+		  messageHandler();
+		  messageHandlerFlag = 0;
+	  }
+
+	  if(seconds > 86400)// 24 hours
+		  NVIC_SystemReset();
+  }
+  /* USER CODE END 3 */
+```
   
 #### Screenshots and Pictures  
 Web Page screenshot  
