@@ -7,12 +7,6 @@
   
 ![alt text](https://github.com/viktorvano/RGB-LED-Strip/blob/main/screenshots%20and%20files/boot-modes.jpg?raw=true)  
   
-###### Network Settings info  
-  
-Your IP addresses in your LAN will be different and you need to change them in the project accortding to your router's network setting.  
-ESP8266 will have a dofferent IP address in your LAN and also your smartphone will have different IP aswell.  
-Android Studio project has a hardcoded IP address of the ESP8266 server and also LED Strip Scheduler has hard coded IP addresses of the ESP and the smartphone.  
-  
 ## Wiring Diagram  
   
 
