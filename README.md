@@ -22,6 +22,7 @@ Android Studio project has a hardcoded IP address of the ESP8266 server and also
 #### Screenshots and Pictures  
 Web Page screenshot  
 ![alt text](https://github.com/viktorvano/STM32-IoT-Humdity-Sensor/blob/main/documents/web-humidity.png?raw=true)  
+![alt text](https://github.com/viktorvano/STM32-IoT-Humdity-Sensor/blob/main/documents/web-humidity2.png?raw=true)  
   
 IoT sensor photo  
 ![alt text](https://github.com/viktorvano/STM32-IoT-Humdity-Sensor/blob/main/documents/photo.jpg?raw=true)  
