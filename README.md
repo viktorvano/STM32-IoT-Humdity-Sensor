@@ -150,5 +150,5 @@ Now you can make a reading from anywhere (using DDNS hostname url)
 ![alt text](https://github.com/viktorvano/STM32-IoT-Humdity-Sensor/blob/main/documents/web-humidity.png?raw=true)   
   
 Or make a reading locally (using LAN IP address)  
-![alt text](https://github.com/viktorvano/STM32-IoT-Humdity-Sensor/blob/main/documents/web-humidity.png?raw=true)   
+![alt text](https://github.com/viktorvano/STM32-IoT-Humdity-Sensor/blob/main/documents/web-humidity2.png?raw=true)   
   
