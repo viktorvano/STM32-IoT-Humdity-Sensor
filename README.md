@@ -1,6 +1,7 @@
 # STM32-IoT-Humdity-Sensor
  IoT humidity sensor using STM32 and AHT15  
  YouTube Tutorial: https://www.youtube.com/watch?v=hdkGWKNdzSs  
+ Try this IoT humidity sensor: http://viktorvano.ddns.net/  
   
 ## Info about ESP8266 12F  
   
