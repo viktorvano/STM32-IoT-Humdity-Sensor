@@ -89,7 +89,7 @@ void messageHandler()
 	if((position = string_contains((char*)buffer, "GET", buffer_index)) != -1)
 	{
 		sendData();
-	}else if(string_contains((char*)buffer, "+CWJAP:", buffer_index) != -1
+	}else if(string_contains((char*)buffer, "CWJAP", buffer_index) != -1
 			&& (string_contains((char*)buffer, "FAIL", buffer_index) != -1
 			|| string_contains((char*)buffer, "DISCONNECT", buffer_index) != -1))
 	{

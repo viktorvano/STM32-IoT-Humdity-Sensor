@@ -18,9 +18,9 @@
 
 extern UART_HandleTypeDef huart1;
 
-uint32_t seconds;
-uint8_t buffer[2000];
-uint16_t buffer_index, timeout, messageHandlerFlag;
+extern uint32_t seconds;
+extern uint8_t buffer[2000];
+extern uint16_t buffer_index, timeout, messageHandlerFlag;
 
 void ESP_RESET();
 void ESP_Server_Init();
